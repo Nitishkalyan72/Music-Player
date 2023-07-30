@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*navigation bar*/
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: rgb(8, 8, 8);
+    height: 60px;
+    align-items: center;
+}
+nav ul a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+nav ul li:hover{
+    color: rgb(218, 207, 207);
+    font-weight: bold;
+
+}
+nav ul li{
+    color: white;
+    padding: 0 16px;
+}
+.brand img{
+    height: 60px;
+    width: 183px;
+}
+/*card*/
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    width: 286px;
+    height: 326px;
+    margin: 150px 30px;
+}
+.cards img{
+    width:286px ;
+    height: 270px;
+    margin-bottom: 12px;
+    background-size: cover;
+    border-radius: 15px ;
+}
+.cards h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+.cards:hover{
+    color: rgb(228, 216, 216);
+    cursor: pointer;
+    transform: scale(1.22);
+    transition: all 0.7s ease;
+    font-weight: bold;
+}
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Muzic"></li>
+            <a href="#"><li>Home</li></a>
+            <a href="query.html"><li>Query</li></a>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="cards">
+            <div><a href="hindi.html"><img src="hindi.jpg" alt=""></a></div>
+            <h2>Hindi Melody</h2>
+        </div>
+        <div class="cards">
+            <div><a href="punjabi.html"><img src="punjabi.jpeg" alt=""></a></div>
+            <h2>Punjabi Tadka</h2>
+        </div>
+        <div class="cards">
+            <div><a href="english.html"><img src="english.jpeg" alt=""></a></div>
+            <h2>English Songs</h2>
+        </div>
+    </section>
+</body>
+</html>
